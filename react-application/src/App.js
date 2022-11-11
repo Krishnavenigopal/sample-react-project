@@ -3,6 +3,7 @@ import './App.css';
 import React from "react";
 import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
 import Home from './pages/home'
+import Navbar from './components/Navbar/navbar';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header> */}
       <Router>
+        <Navbar/>
         <Routes>
             <Route  path="/home"   element={<Home />}  />
         </Routes>
