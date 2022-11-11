@@ -1,5 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import React from "react";
 import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
 import Home from './components/home'
 
@@ -11,9 +12,7 @@ function App() {
       </header> */}
       <Router>
         <Routes>
-        <Route path='/home' exact element={ Home }>
-          
-        </Route>
+            <Route  path="/home"   element={<Home />}  />
         </Routes>
       </Router>
     </div>
